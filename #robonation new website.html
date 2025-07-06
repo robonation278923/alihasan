@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Robonation smart projects</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      background-color: #4d5e63;
+    }
+
+    header {
+      background-color: #4b5857;
+      color: rgba(255, 81, 0, 0.966);
+      text-align: center;
+      padding: 20px;
+    }
+
+    nav {
+      background-color: #4b5e61;
+      display: flex;
+      justify-content: center;
+    }
+
+    nav a {
+      color: rgb(0, 0, 0);
+      padding: 14px 20px;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    nav a:hover {
+      background-color: #6bca88;
+    }
+
+    .content {
+      padding: 20px;
+    }
+
+    .robot-section {
+      background-color: rgb(135, 226, 155);
+      border-radius: 10px;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 0 5px rgba(255, 255, 255, 0.1);
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .gallery-item {
+      background-color: #00e038;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      width: 250px;
+      overflow: hidden;
+      text-align: center;
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .gallery-item h3 {
+      padding: 10px;
+      margin: 0;
+    }
+
+    footer {
+      background-color: #1e1e2f;
+      color: white;
+      text-align: center;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Robonation</h1>
+    <p>Welcome to the world of Robotics Innovation</p>
+    <p>Customise order avaliable </p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+    <a href="#Home">home</a>
+  </nav>
+
+  <div class="content">
+    <section id="about" class="robot-section">
+      <h2>About Robonation</h2>
+      <p>We design and build intelligent robots, smart cars, and automation systems to lead the future of technology.</p>
+    </section>
+
+    <section id="projects" class="robot-section">
+    <!DOCTYPE html>
+<html>
+<head>
+  <title>Our Projects</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background: #b8ad1c;
+      color: #000;
+      padding: 20px;
+      margin: 0;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    h2 {
+      text-align: center;
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+
+    .button {
+      display: block;
+      width: 100%;
+      margin: 8px 0;
+      padding: 12px;
+      border: 1px solid #000;
+      background: #4b5253;
+      color: #000;
+      font-size: 18px;
+      border-radius: 10px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .button:hover {
+      background: #000000;
+      color: #4b595a;
+    }
+
+    .project-detail {
+      display: none;
+      margin-top: 20px;
+      border-top: 1px solid #1adbe9;
+      padding-top: 15px;
+      text-align: center;
+    }
+
+    .project-detail img {
+      width: 90%;
+      max-width: 300px;
+      border-radius: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #000;
+    }
+
+    .back-btn {
+      margin-top: 10px;
+      padding: 8px 16px;
+      background: #000;
+      color: rgb(0, 238, 255);
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Our Projects</h2>
+
+    <!-- Buttons -->
+    <button class="button" onclick="showDetail('line')">Line Follower Robot</button>
+    <button class="button" onclick="showDetail('obstacle')">Obstacle Avoidance Car</button>
+    <button class="button" onclick="showDetail('bluetooth')">Bluetooth Controlled Car</button>
+    <button class="button" onclick="showDetail('clap')">Clap Switch</button>
+    <button class="button" onclick="showDetail('voice')">Voice Controlled Car</button>
+    <button class="button" onclick="showDetail('dustbin')">Smart Dustbin</button>
+    <button class="button" onclick="showDetail('water')">Water Level</button>
+    
+
+    <!-- Project Details -->
+    <div id="line" class="project-detail">
+      <img src="c:\Users\HP\Downloads\images (1).jpeg" alt="Line Follower Robot">
+      <p>This robot follows a black line using infrared sensors.</p>
+      <button class="back-btn" onclick="goBack()">Back</button>
+    </div>
+
+    <div id="obstacle" class="project-detail">
+      <img src="c:\Users\HP\Downloads\download.jpeg" alt="Obstacle Avoidance Car">
+      <p>This car avoids obstacles using ultrasonic sensor detection.</p>
+      <button class="back-btn" onclick="goBack()">Back</button>
+    </div>
+
+    <div id="bluetooth" class="project-detail">
+      <img src="C:\Users\HP\Downloads\maxresdefault (1).jpg" alt="Bluetooth Controlled Car">
+      <p>Controlled via mobile Bluetooth app, this car moves on your command.</p>
+      <button class="back-btn" onclick="goBack()">Back</button>
+    </div>
+
+    <div id="clap" class="project-detail">
+      <img src="c:\Users\HP\Downloads\images.jpeg" alt="Clap Switch">
+      <p>Turns devices ON/OFF by detecting clap sounds using a sound sensor.</p>
+      <button class="back-btn" onclick="goBack()">Back</button>
+    </div>
+
+    <div id="voice" class="project-detail">
+      <img src="C:\Users\HP\Downloads\download.jpeg" alt="Voice Controlled Car">
+      <p>This car moves based on voice commands like "forward", "stop", etc.</p>
+      <button class="back-btn" onclick="goBack()">Back</button>
+    </div>
+
+    <div id="dustbin" class="project-detail">
+      <img src="C:\Users\HP\Downloads\download (1).jpeg" alt="Smart Dustbin">
+      <p>The lid opens automatically when your hand comes near using ultrasonic sensor.</p>
+      <button class="back-btn" onclick="goBack()">Back</button>
+    </div>
+
+    <div id="water" class="project-detail">
+      <img src="C:\Users\HP\Downloads\maxresdefault (3).jpg" alt="Water Level">
+      <p>This system shows water levels in a tank using LEDs or a display.</p>
+      <button class="back-btn" onclick="goBack()">Back</button>
+
+  <script>
+    function showDetail(id) {
+      // Hide all project details
+      document.querySelectorAll('.project-detail').forEach(div => {
+        div.style.display = 'none';
+      });
+      // Show the selected one
+      document.getElementById(id).style.display = 'block';
+
+      // Hide all buttons
+      document.querySelectorAll('.button').forEach(btn => {
+        btn.style.display = 'none';
+      });
+    }
+
+    function goBack() {
+      // Hide all detail views
+      document.querySelectorAll('.project-detail').forEach(div => {
+        div.style.display = 'none';
+      });
+      // Show all buttons
+      document.querySelectorAll('.button').forEach(btn => {
+        btn.style.display = 'block';
+      });
+    }
+  </script>
+        </div>
+      </div>
+
+    </section>
+  <h2>Contact Us:</h2>
+
+  <p>Email: <a href="mailto:robonation278@gmail.com">robonation278@gmail.com</a></p>
+  <p>WhatsApp: <a href="tel:+923302542777">0330-2542777</a></p>
+  <p>Instagram: <a href="https://www.instagram.com/robonation__/" target="_blank">robonation__</a></p>
+
+</body>
+</html>
+  </script>
+</body>
+</html>
+</section>
+
+    </section>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 robonation made by Ali hasan</p>
+  
+
+
+</head>
+<body>
+
+
+  
+
+</body>
+</html>
+
+
+
+
+</body>
+</html>
+
